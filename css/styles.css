@@ -1,0 +1,29 @@
+@import url("./variables.css");
+
+body {
+  background-color: #ffffff;
+}
+
+header {
+  background-color: #0072bc;
+}
+
+@media screen and (max-width: var(--mobile)) {
+  .container {
+    width: var(--mobile);
+  }
+}
+
+@media screen and (max-width: var(--tablets)) {
+  .header-fn {
+    width: 768px;
+  }
+}
+@media screen and (min-width: var(--tablets)) {
+  .container {
+    width: var(--tablets);
+  }
+}
+
+@media screen and (max-width: var(--desktop)) {
+}
