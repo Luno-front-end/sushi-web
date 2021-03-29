@@ -10,7 +10,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/normalize.css" />
-
     <link rel="stylesheet" href="./css/styles.css" />
 
     <title>sushi-web</title>
@@ -131,32 +130,47 @@
         </div>
       </section>
 
-      <section>
-        <h2>Самые выгодные предложения:</h2>
+      <section class="section-slider">
+        <div class="container">
+          <h2 class="general-heading heading-slider">
+            Самые выгодные предложения:
+          </h2>
 
-        <div>
           <picture>
             <source
               srcset="./images/krivetka-salfetka.webp 1x"
               type="image/webp"
             />
             <img
-              class="img"
+              class="img-slide"
               src="./images/krivetka-salfetka.webp"
               alt="описание"
             />
           </picture>
           <picture>
             <source srcset="./images/fish-lemon.webp 1x" type="image/webp" />
-            <img class="img" src="./images/fish-lemon.webp" alt="описание" />
+            <img
+              class="img-slide"
+              src="./images/fish-lemon.webp"
+              alt="описание"
+            />
           </picture>
           <picture>
             <source srcset="./images/sushi-vodka.webp 1x" type="image/webp" />
-            <img class="img" src="./images/sushi-vodka.webp" alt="описание" />
+            <img
+              class="img-slide"
+              src="./images/sushi-vodka.webp"
+              alt="описание"
+            />
           </picture>
         </div>
       </section>
     </main>
-    <footer>Copyright 2021</footer>
+    <footer>
+      <div class="container footer-container">
+        <p class="general-heading copyright">Copyright 2021</p>
+      </div>
+    </footer>
+    <script src="./js/index.js"></script>
   </body>
 </html>

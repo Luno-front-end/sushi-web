@@ -13,6 +13,7 @@
   --btn-card-order-color: #06811a;
   --btn-card-absend-color: #444444;
   --heading-card-color: #8e0000;
+  --bg-section-slider: #6dcff6;
 }
 
 /* General styles */
@@ -38,6 +39,10 @@ header {
   padding: 0;
 }
 
+.general-heading {
+  margin: 0;
+}
+
 .logo-link {
   color: var(--primary-color-text-header);
 }
@@ -60,10 +65,6 @@ header {
   line-height: 3.33; */
 }
 
-.general-heading {
-  margin: 0;
-}
-
 .heading-hero {
   font-weight: 700;
 }
@@ -82,6 +83,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  margin-bottom: 0;
 }
 
 .list {
@@ -115,13 +118,40 @@ header {
 }
 
 .btn-card {
+  display: inline-block;
   color: var(--btn-card-order-color);
+
+  padding: 5px;
+
+  font-size: 17px;
+  line-height: 0.7;
 
   border: none;
   cursor: pointer;
 }
 .btn-none {
   color: var(--btn-card-absend-color);
+
+  outline: none;
+}
+
+.btn-none:hover.btn-none:focus {
+  color: var(--heading-card-color);
+}
+
+/* General section three  (slider)  */
+
+.section-slider .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* General footer */
+
+.copyright {
+  font-weight: 700;
 }
 
 /* Responsive and defined styles */
@@ -201,6 +231,7 @@ header {
 
   .section-card {
     padding-top: 20px;
+    padding-bottom: 20px;
   }
 
   .heading-hero-positions {
@@ -227,10 +258,12 @@ header {
   }
 
   .list-stock {
+    margin-top: 20px;
+    width: 250px;
   }
 
   .img-stock {
-    width: 250px;
+    width: 100%;
   }
 
   .heading-card {
@@ -247,6 +280,38 @@ header {
 
   .btn-card {
     margin-top: 20px;
+  }
+
+  /* Section three  (slider)  */
+
+  .section-slider {
+    background-color: var(--bg-section-slider);
+    padding-top: 37px;
+  }
+  .section-slider .container {
+  }
+
+  .heading-slider {
+    margin-bottom: 25px;
+
+    font-size: 25px;
+    line-height: 2;
+  }
+  .img-slide {
+    width: 300px;
+  }
+
+  /* Footer */
+  .footer-container {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+
+    padding-top: 12px;
+  }
+
+  .copyright {
+    font-size: 10px;
   }
 }
 
@@ -276,4 +341,11 @@ header {
 } */
 /* .heading-hero {
   margin: 50px;
+} */
+
+/* iframe {
+  margin: 0;
+  padding: 0;
+  width: 0;
+  height: 0;
 } */
