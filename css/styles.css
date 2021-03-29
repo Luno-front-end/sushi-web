@@ -47,8 +47,30 @@ header {
 }
 
 .logo-text {
-  font-weight: 700;
   margin: 0;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 3.33;
+}
+
+.general-heading {
+  margin: 0;
+}
+
+.container-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.heading-hero {
+  font-weight: 700;
+}
+
+.heading-hero-two {
+  font-weight: 700;
 }
 
 /* Responsive and defined styles */
@@ -76,9 +98,27 @@ header {
     height: 30px;
 
     font-weight: 700;
+    font-size: 13px;
+    line-height: 1.083;
 
     border: none;
     cursor: pointer;
+  }
+
+  /* Main. Section one  */
+
+  .heading-hero {
+    margin-top: 25px;
+    margin-bottom: 0;
+    font-size: 17px;
+    line-height: 1.2;
+    /* font-size: 22.5px;
+  line-height: 1.875; */
+  }
+
+  .heading-hero-two {
+    font-size: 17px;
+    line-height: 1.2;
   }
 }
 
@@ -105,4 +145,7 @@ header {
     width: 250px;
     height: 60px;
   }
+} */
+/* .heading-hero {
+  margin: 50px;
 } */
