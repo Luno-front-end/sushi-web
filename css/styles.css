@@ -50,8 +50,8 @@ header {
   margin: 0;
 
   font-weight: 700;
-  font-size: 16px;
-  line-height: 3.33;
+  /* font-size: 16px;
+  line-height: 3.33; */
 }
 
 .general-heading {
@@ -88,13 +88,21 @@ header {
     width: 60px;
     margin-right: 20px;
   }
+
+  .logo-text {
+    font-size: 13px;
+    line-height: 1;
+
+    /* font-size: 16px;
+  line-height: 3.33; */
+  }
   .btn-orderHead {
     display: inline-block;
 
     color: var(--primary-color-text-header);
     background-color: var(--primary-color-bg-btn);
 
-    min-width: 150px;
+    min-width: 100px;
     height: 30px;
 
     font-weight: 700;
