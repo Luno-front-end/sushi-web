@@ -60,12 +60,32 @@
                   srcset="./images/grinobl-roll.webp 1x"
                   type="image/webp"
                 />
+                <source srcset="./images/grinobl-roll.jpg 1x" />
                 <img
                   class="img-card"
-                  src="./images/grinobl-roll.webp"
+                  src="./images/grinobl-roll.jpg"
                   alt="описание"
                 />
               </picture>
+              <!-- 
+              <source
+                srcset="
+                  ./images/about-us/beard330T.webp    1x,
+                  ./images/about-us/beard660T@2x.webp 2x,
+                  ./images/about-us/beard990T@3x.webp 3x
+                "
+                media="(min-width: 768px) and (max-width: 1199px)"
+                type="image/webp"
+              />
+              <source
+                srcset="
+                  ./images/about-us/beard330T.jpg    1x,
+                  ./images/about-us/beard660T@2x.jpg 2x,
+                  ./images/about-us/beard990T@3x.jpg 3x
+                "
+                media="(min-width: 768px) and (max-width: 1199px)"
+              /> -->
+
               <h3 class="general-heading heading-card">Гринобль ролл</h3>
               <p class="general-heading text-card">
                 Закажи сей вкусный ролл, Он украсит ваший стол, Он порадует ваш
@@ -116,7 +136,7 @@
               </button>
             </li>
 
-            <li class="list-stock">
+            <li class="list list-stock">
               <picture>
                 <source srcset="./images/set-roll.webp 1x" type="image/webp" />
                 <img
@@ -135,34 +155,54 @@
           <h2 class="general-heading heading-slider">
             Самые выгодные предложения:
           </h2>
-
-          <picture>
-            <source
-              srcset="./images/krivetka-salfetka.webp 1x"
-              type="image/webp"
-            />
-            <img
-              class="img-slide"
-              src="./images/krivetka-salfetka.webp"
-              alt="описание"
-            />
-          </picture>
-          <picture>
-            <source srcset="./images/fish-lemon.webp 1x" type="image/webp" />
-            <img
-              class="img-slide"
-              src="./images/fish-lemon.webp"
-              alt="описание"
-            />
-          </picture>
-          <picture>
-            <source srcset="./images/sushi-vodka.webp 1x" type="image/webp" />
-            <img
-              class="img-slide"
-              src="./images/sushi-vodka.webp"
-              alt="описание"
-            />
-          </picture>
+          <div class="slider-container">
+            <div class="slid current">
+              <picture>
+                <source
+                  srcset="./images/krivetka-salfetka.webp 1x"
+                  type="image/webp"
+                />
+                <img
+                  class="img-slide"
+                  src="./images/krivetka-salfetka.webp"
+                  alt="описание"
+                />
+              </picture>
+            </div>
+            <div class="slid">
+              <picture>
+                <source
+                  srcset="./images/fish-lemon.webp 1x"
+                  type="image/webp"
+                />
+                <img
+                  class="img-slide"
+                  src="./images/fish-lemon.webp"
+                  alt="описание"
+                />
+              </picture>
+            </div>
+            <div class="slid">
+              <picture>
+                <source
+                  srcset="./images/sushi-vodka.webp 1x"
+                  type="image/webp"
+                />
+                <img
+                  class="img-slide"
+                  src="./images/sushi-vodka.webp"
+                  alt="описание"
+                />
+              </picture>
+            </div>
+          </div>
+          <div class="controls-container">
+            <button type="button" class="btn-back">back</button>
+            <button type="button" class="current-one">1</button>
+            <button type="button" class="current-two">2</button>
+            <button type="button" class="current-three">3</button>
+            <button type="button" class="btn-next">next</button>
+          </div>
         </div>
       </section>
     </main>
