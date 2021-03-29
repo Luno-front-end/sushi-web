@@ -9,6 +9,10 @@
   --primary-color-text-header: #ffffff;
   --primary-color-bg-header: #0072bc;
   --primary-color-bg-btn: #f26522;
+  --border-color-card: #999595;
+  --btn-card-order-color: #06811a;
+  --btn-card-absend-color: #444444;
+  --heading-card-color: #8e0000;
 }
 
 /* General styles */
@@ -31,6 +35,7 @@ header {
 }
 .general-list {
   list-style: none;
+  padding: 0;
 }
 
 .logo-link {
@@ -59,13 +64,6 @@ header {
   margin: 0;
 }
 
-.container-hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 .heading-hero {
   font-weight: 700;
 }
@@ -76,6 +74,54 @@ header {
 
 .subtitle-hero {
   font-weight: 400;
+}
+
+/* General section card */
+
+.list-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid var(--border-color-card);
+  border-radius: 10px;
+}
+
+.img-card {
+  display: block;
+  width: 100%;
+
+  border-radius: 10px;
+}
+
+.img-stock {
+  width: 250px;
+}
+
+.heading-card {
+  color: var(--heading-card-color);
+
+  font-weight: 700;
+}
+.text-card {
+  text-align: center;
+}
+
+.btn-card {
+  color: var(--btn-card-order-color);
+
+  border: none;
+  cursor: pointer;
+}
+.btn-none {
+  color: var(--btn-card-absend-color);
 }
 
 /* Responsive and defined styles */
@@ -118,10 +164,17 @@ header {
     cursor: pointer;
   }
 
-  /* Main. Section one  */
+  /* Main. Section one (hero)  */
+  .container-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 25px;
+  }
 
   .heading-hero {
-    margin-top: 25px;
     margin-bottom: 0;
     font-size: 17px;
     line-height: 1.2;
@@ -142,6 +195,58 @@ header {
     font-size: 15px;
     line-height: 0.88;
     text-align: center;
+  }
+
+  /* Main. Section two (section card)  */
+
+  .section-card {
+    padding-top: 20px;
+  }
+
+  .heading-hero-positions {
+    font-size: 17px;
+    line-height: 0.88;
+  }
+
+  .list-card {
+    flex-direction: column;
+
+    margin-top: 20px;
+  }
+
+  .list {
+    flex-direction: column;
+
+    width: 250px;
+
+    padding-bottom: 17px;
+  }
+
+  .list:not(:first-child) {
+    margin-top: 15px;
+  }
+
+  .list-stock {
+  }
+
+  .img-stock {
+    width: 250px;
+  }
+
+  .heading-card {
+    margin-top: 10px;
+
+    font-size: 17px;
+  }
+  .text-card {
+    margin-top: 20px;
+
+    font-size: 15px;
+    line-height: 1;
+  }
+
+  .btn-card {
+    margin-top: 20px;
   }
 }
 
