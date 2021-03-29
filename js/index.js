@@ -15,6 +15,7 @@ btnCurrentTreeEl.addEventListener("click", threeImages);
 let index = 0;
 
 function classCheck() {
+  stopSlide();
   const newArrayImg = [...slidrEl];
   newArrayImg.find((img) => img.classList.remove("current"));
 }
@@ -70,4 +71,15 @@ function slider(indexEl) {
   const activSlide = slidrEl[indexEl];
 
   activSlide.classList.add("current");
+}
+
+let intervalId = setInterval(() => nextSlide(), 5000);
+
+function stopSlide() {
+  clearInterval(intervalId);
+  let timeoutId = setTimeout(
+    (intervalId = setInterval(() => nextSlide(), 5000)),
+    1000
+  );
+  clearTimeout(timeoutId);
 }

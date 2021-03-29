@@ -305,6 +305,36 @@ header {
     width: 300px;
   }
 
+  .controls-container {
+    display: none;
+  }
+
+  .slider-container {
+    height: 100px;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .slid {
+    position: absolute;
+    min-width: 300px;
+
+    opacity: 0;
+
+    transition: opacity 1000ms linear;
+  }
+  .current {
+    opacity: 1;
+    transition: opacity 1000ms linear;
+  }
+
+  .current {
+    opacity: 1;
+    transition: opacity 1000ms linear;
+  }
+
   /* Footer */
   .footer-container {
     display: flex;
@@ -435,6 +465,7 @@ header {
   /* Section three  (slider)  */
 
   .section-slider {
+    /* height: 300px; */
     background-color: var(--bg-section-slider);
     padding-top: 37px;
     padding-bottom: 85px;
@@ -451,19 +482,86 @@ header {
   }
 
   .slider-container {
+    height: 200px;
+    position: relative;
+
     display: flex;
     justify-content: center;
     align-items: center;
-
-    /* overflow: hidden; */
   }
   .slid {
+    position: absolute;
     min-width: 420px;
-    /* height: 100px; */
-    display: none;
+
+    opacity: 0;
+
+    transition: opacity 1000ms linear;
   }
+
   .current {
-    display: block;
+    opacity: 1;
+    transition: opacity 1000ms linear;
+  }
+
+  .btn-back {
+    background-color: transparent;
+
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .btn-back-img {
+    transform: rotate(180deg);
+  }
+  .current-one {
+    background-color: var(--primary-color-text-header);
+
+    width: 30px;
+    height: 30px;
+
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+  }
+  .current-two {
+    background-color: var(--primary-color-text-header);
+
+    width: 30px;
+    height: 30px;
+
+    margin-left: 20px;
+
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+  }
+  .current-three {
+    background-color: var(--primary-color-text-header);
+
+    width: 30px;
+    height: 30px;
+
+    margin-left: 20px;
+
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+  }
+  .btn-next {
+    background-color: transparent;
+
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .controls-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   /* Footer */
@@ -481,7 +579,9 @@ header {
   }
 }
 
-/* @media screen and (min-width: 1200px) {
+/* DESKTOP */
+
+@media screen and (min-width: 1200px) {
   .container {
     width: var(--desktop);
     padding-left: 20px;
@@ -489,4 +589,221 @@ header {
     margin: 0 auto;
   }
 
-} */
+  /* Header */
+  .logo-img {
+    width: 85px;
+    margin-right: 20px;
+  }
+
+  .logo-text {
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .btn-orderHead {
+    min-width: 190px;
+    height: 40px;
+
+    font-size: 18px;
+    line-height: 1.083;
+  }
+
+  /* Main. Section one (hero)  */
+  .container-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding-top: 25px;
+  }
+
+  .heading-hero {
+    margin-bottom: 0;
+    font-size: 25px;
+    line-height: 1.2;
+
+    text-align: center;
+  }
+
+  .heading-hero-two {
+    font-size: 25px;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .subtitle-hero {
+    margin-top: 25px;
+    font-size: 22px;
+    line-height: 0.88;
+    text-align: center;
+  }
+
+  /* Main. Section two (section card)  */
+
+  .section-card {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .heading-hero-positions {
+    font-size: 22px;
+    line-height: 0.88;
+  }
+
+  .list-card {
+    margin-top: 20px;
+  }
+
+  .list {
+    flex-direction: column;
+
+    width: 250px;
+
+    padding-bottom: 17px;
+  }
+
+  .list:not(:first-child) {
+    margin-left: 15px;
+  }
+
+  .list-stock {
+    border: none;
+  }
+
+  .img-stock {
+    width: 100%;
+  }
+
+  .heading-card {
+    margin-top: 10px;
+
+    font-size: 17px;
+  }
+  .text-card {
+    margin-top: 20px;
+
+    font-size: 15px;
+    line-height: 1;
+  }
+
+  .btn-card {
+    margin-top: 20px;
+  }
+
+  /* Section three  (slider)  */
+
+  .section-slider {
+    /* height: 300px; */
+    background-color: var(--bg-section-slider);
+    padding-top: 37px;
+    padding-bottom: 85px;
+  }
+
+  .heading-slider {
+    margin-bottom: 25px;
+
+    font-size: 25px;
+    line-height: 2;
+  }
+  .img-slide {
+    width: 420px;
+  }
+
+  .slider-container {
+    height: 200px;
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .slid {
+    position: absolute;
+    min-width: 420px;
+
+    opacity: 0;
+
+    transition: opacity 1000ms linear;
+  }
+
+  .current {
+    opacity: 1;
+    transition: opacity 1000ms linear;
+  }
+
+  .btn-back {
+    background-color: transparent;
+
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  .btn-back-img {
+    transform: rotate(180deg);
+  }
+  .current-one {
+    background-color: var(--primary-color-text-header);
+
+    width: 30px;
+    height: 30px;
+
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+  }
+  .current-two {
+    background-color: var(--primary-color-text-header);
+
+    width: 30px;
+    height: 30px;
+
+    margin-left: 20px;
+
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+  }
+  .current-three {
+    background-color: var(--primary-color-text-header);
+
+    width: 30px;
+    height: 30px;
+
+    margin-left: 20px;
+
+    border: none;
+    border-radius: 50px;
+    outline: none;
+    cursor: pointer;
+  }
+  .btn-next {
+    background-color: transparent;
+
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  .controls-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Footer */
+  .footer-container {
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .copyright {
+    font-size: 10px;
+  }
+}
