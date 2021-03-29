@@ -30,6 +30,7 @@ header {
   text-decoration: none;
 }
 .general-list {
+  list-style: none;
 }
 
 .logo-link {
@@ -71,6 +72,10 @@ header {
 
 .heading-hero-two {
   font-weight: 700;
+}
+
+.subtitle-hero {
+  font-weight: 400;
 }
 
 /* Responsive and defined styles */
@@ -129,6 +134,13 @@ header {
   .heading-hero-two {
     font-size: 17px;
     line-height: 1.2;
+    text-align: center;
+  }
+
+  .subtitle-hero {
+    margin-top: 25px;
+    font-size: 15px;
+    line-height: 0.88;
     text-align: center;
   }
 }
