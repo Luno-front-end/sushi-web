@@ -1,29 +1,108 @@
-@import url("./variables.css");
+:root {
+  /* Adaptive variables */
+
+  --mobile: 480px;
+  --tablets: 768px;
+  --desktop: 1200px;
+
+  /* Color-Variables */
+  --primary-color-text-header: #ffffff;
+  --primary-color-bg-header: #0072bc;
+  --primary-color-bg-btn: #f26522;
+}
+
+/* General styles */
 
 body {
-  background-color: #ffffff;
+  background-color: var(--primary-color-text-header);
+  font-family: "PT Sans", sans-serif;
 }
 
 header {
-  background-color: #0072bc;
+  background-color: var(--primary-color-bg-header);
 }
 
-@media screen and (max-width: var(--mobile)) {
+.img {
+  width: 150px;
+}
+
+.general-link {
+  text-decoration: none;
+}
+.general-list {
+}
+
+.logo-link {
+  color: var(--primary-color-text-header);
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-text {
+  font-weight: 700;
+  margin: 0;
+}
+
+/* Responsive and defined styles */
+
+@media screen and (max-width: 767px) {
   .container {
-    width: var(--mobile);
+    max-width: var(--mobile);
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 0 auto;
+  }
+
+  /* Header */
+  .logo-img {
+    width: 60px;
+    margin-right: 20px;
+  }
+  .btn-orderHead {
+    display: inline-block;
+
+    color: var(--primary-color-text-header);
+    background-color: var(--primary-color-bg-btn);
+
+    min-width: 150px;
+    height: 30px;
+
+    font-weight: 700;
+
+    border: none;
+    cursor: pointer;
   }
 }
 
-@media screen and (max-width: var(--tablets)) {
-  .header-fn {
-    width: 768px;
-  }
-}
-@media screen and (min-width: var(--tablets)) {
+/* @media screen and (min-width: 768px) and (max-width: 1199px) {
   .container {
     width: var(--tablets);
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+  }
+  .logo-img {
+    width: 85px;
   }
 }
 
-@media screen and (max-width: var(--desktop)) {
-}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: var(--desktop);
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 0 auto;
+  }
+  .btn-orderHead {
+    width: 250px;
+    height: 60px;
+  }
+} */

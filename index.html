@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/normalize.css" />
 
     <link rel="stylesheet" href="./css/styles.css" />
@@ -12,8 +17,19 @@
   </head>
   <body>
     <header>
-      <div class="header-fn">
-        <a href=""><p>Суши-шмастер</p></a> <button>Сделать заказ</button>
+      <div class="header-section container">
+        <a class="general-link logo-link logo" href="index.html"
+          ><img
+            class="logo-img"
+            src="./images/clown-fish.svg"
+            alt="logo fish"
+            width="141"
+          />
+          <p class="logo-text">Суши-шмастер</p></a
+        >
+        <button class="btn-orderHead" id="btnOrder" type="button">
+          Сделать заказ
+        </button>
       </div>
     </header>
     <main>
@@ -31,7 +47,11 @@
                 srcset="./images/grinobl-roll.webp 1x"
                 type="image/webp"
               />
-              <img src="./images/grinobl-roll.webp" alt="описание" />
+              <img
+                class="img"
+                src="./images/grinobl-roll.webp"
+                alt="описание"
+              />
             </picture>
             <p>Гринобль ролл</p>
             <button>Заказать</button>
@@ -39,7 +59,7 @@
           <li>
             <picture>
               <source srcset="./images/orang-roll.webp 1x" type="image/webp" />
-              <img src="./images/orang-roll.webp" alt="описание" />
+              <img class="img" src="./images/orang-roll.webp" alt="описание" />
             </picture>
             <p>Оранжад ролл</p>
             <button>Недоступно к заказу</button>
@@ -47,7 +67,7 @@
           <li>
             <picture>
               <source srcset="./images/brauni-roll.webp 1x" type="image/webp" />
-              <img src="./images/brauni-roll.webp" alt="описание" />
+              <img class="img" src="./images/brauni-roll.webp" alt="описание" />
             </picture>
             <p>Брауни рол</p>
             <button>Недоступно к заказу</button>
@@ -56,7 +76,7 @@
           <li>
             <picture>
               <source srcset="./images/set-roll.webp 1x" type="image/webp" />
-              <img src="./images/set-roll.webp" alt="описание" />
+              <img class="img" src="./images/set-roll.webp" alt="описание" />
             </picture>
           </li>
         </ul>
@@ -70,15 +90,19 @@
               srcset="./images/krivetka-salfetka.webp 1x"
               type="image/webp"
             />
-            <img src="./images/krivetka-salfetka.webp" alt="описание" />
+            <img
+              class="img"
+              src="./images/krivetka-salfetka.webp"
+              alt="описание"
+            />
           </picture>
           <picture>
             <source srcset="./images/fish-lemon.webp 1x" type="image/webp" />
-            <img src="./images/fish-lemon.webp" alt="описание" />
+            <img class="img" src="./images/fish-lemon.webp" alt="описание" />
           </picture>
           <picture>
             <source srcset="./images/sushi-vodka.webp 1x" type="image/webp" />
-            <img src="./images/sushi-vodka.webp" alt="описание" />
+            <img class="img" src="./images/sushi-vodka.webp" alt="описание" />
           </picture>
         </div>
       </section>
