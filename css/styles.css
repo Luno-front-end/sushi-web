@@ -120,6 +120,8 @@ header {
     margin-bottom: 0;
     font-size: 17px;
     line-height: 1.2;
+
+    text-align: center;
     /* font-size: 22.5px;
   line-height: 1.875; */
   }
@@ -127,6 +129,7 @@ header {
   .heading-hero-two {
     font-size: 17px;
     line-height: 1.2;
+    text-align: center;
   }
 }
 
